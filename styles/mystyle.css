@@ -1,0 +1,1108 @@
+@font-face {
+	font-family: ArTarumianMHarvats;
+	src: url(../fonts/HARVATS.ttf);
+}
+
+@font-face {font-family: "Europa-Bold"; 
+src: url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.eot"); 
+src: url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.woff") format("woff"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.svg#Europa-Bold") format("svg"); 
+}
+
+@font-face {font-family: "Europa"; 
+src: url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.eot"); 
+src: url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.woff") format("woff"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.svg#Europa") format("svg"); 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#mainwrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#banner {
+	height: 500px;
+	background-size: cover;
+	position: relative;
+	background-color: #aaa;
+}
+
+#slide1 {
+	height: 500px;
+	background-size: cover;
+	background-image: url("../images/coe-banner.png");
+}
+
+#slide2 {
+	height: 500px;
+	background-size: cover;
+	background-image: url("../images/temp-audience2.jpg");
+}
+
+#slide3 {
+	height: 500px;
+	background-size: cover;
+	background-image: url("../images/podium1.jpg");
+}
+
+.mySlides {
+	display: none;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+#banner-page {
+	height: 300px;
+	background-size: cover;
+	background-image: url("../images/temp-audience1.jpg");
+}
+
+body{
+	font-family: 'Biryani', sans-serif;
+	font-size: 0.9em;
+	background-color: #006673;
+	color: #fdae14;
+	margin: 0px;
+}
+
+h1, h2 {
+	font-family: Europa-Bold, Arial, Sans-Serif;
+	text-transform: uppercase;
+	font-size: 1.7em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+
+/*#logo {
+	background: url(../images/BodP-logo-transparant.png) no-repeat center center;
+	position: absolute;
+	top: 0;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height: 500px;
+}*/
+
+#logo-page {
+	background: url(../images/BodP-logo-transparant-300.png) no-repeat center center;
+	height: 300px;
+}
+
+header img {
+	width: 100px;
+}
+
+#menuback {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+#menuback:hover {
+	cursor: pointer;
+}
+
+#navbar {
+	background-color: #2f4858;
+	clear: both;
+	display: flex;
+	justify-content: space-between;	
+	position: sticky;
+	top: 0;
+	height: 62px;
+}
+
+#navlogo {
+	background-image: url(../images/coe-logo-50px.png);
+	background-size: cover;
+	width: 137px;
+	height: 50px;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+
+.hidelogo {
+	opacity: 0.0;
+	transition: 0.8s;
+}
+
+.showlogo {
+	opacity: 1.0;
+	transition: 0.8s;
+}
+
+nav {
+	position: static;
+}
+
+nav ul {
+	display: flex;
+	padding-inline-start: 0px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav ul {
+	margin: 15px 0px 0px;
+}
+
+nav li {
+	margin-left: -4px;
+}
+
+nav a {
+	font-family: font-family: Europa-Bold, Arial, Sans-Serif;
+	font-size: 1.3em;
+	font-weight: 600;
+	padding: 15px;
+	color: #fdae14;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	/*color: #2f4858;*/
+	background-color: #006673;
+	transition: 0.5s;
+}
+
+#menuclose {
+	display: none;
+	text-align: right;
+}
+
+main {
+	clear: both;
+}
+
+.linkoffset::before {
+	content: '';
+	display: block;
+	height:      30px;
+	margin-top: -30px;
+	visibility: hidden;
+}
+
+/*Language picker styling*/
+
+
+#sl-nav {
+	display: inline;
+	padding-left: 8px;
+	color: #fdae14;
+	text-transform: uppercase;
+}
+#sl-nav ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+}
+#sl-nav li {
+	cursor: pointer;
+	padding-bottom:9px;
+}
+#sl-nav li ul {
+	display: none;
+}
+#sl-nav li:hover ul {
+	position: absolute;
+	top:29px;
+	right:-15px;
+	display: block;
+	background: #eee;
+	width: 170px;
+	padding-top: 0px;
+	z-index: 3;
+	border-radius:5px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+#sl-nav li:hover .triangle {
+	position: absolute;
+	top: 15px;
+	right: -10px;
+	z-index:10;
+	height: 14px;
+	overflow:hidden;
+	width: 30px;
+	background: transparent;
+}
+#sl-nav li:hover .triangle:after {
+	content: '';
+	display: block;
+	z-index: 20;
+	width: 15px;
+	transform: rotate(45deg) translateY(0px) translatex(10px);
+	height: 15px;
+	background: #eee;
+	border-radius:2px 0px 0px 0px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+#sl-nav a {
+	color: red;
+	/*	padding: 9px 7px 9px 8px;*/
+}
+
+#sl-nav ul li a {
+	/*	color: red;*/
+	padding: 9px 6px 9px 7px;
+}
+
+#sl-nav a:hover {
+	color: darkred;
+	background-color: #eee;
+	text-decoration: underline;
+}
+
+.sl-flag {
+	display: inline-block;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+	width: 15px;
+	height: 15px;
+	background: #aaa;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 4px;
+	top: 2px;
+	overflow: hidden;
+}
+
+.flag-de {
+	background: url('../images/icons/lang-de.png');
+	background-size: cover;
+	background-position: center center;
+}
+.flag-en {
+	background: url('../images/icons/lang-en.png');
+	background-size: cover;
+	background-position: center center;
+}
+.flag-nl {
+	background: url('../images/icons/lang-nl.png');
+	background-size: cover;
+	background-position: center center;
+}
+.flag-es {
+	background: url('../images/icons/lang-es.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+/*---------Main----------*/
+
+.flex-section {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.sectionimage {
+	width: 50%;
+}
+
+.sectionimage img {
+	display: block;
+	max-width: 500px;
+	margin: 0px auto;
+}
+
+.textblok {
+	width: 50%;
+	align-self: flex-start;
+	padding: 8px 8px 8px 20px;
+}
+
+.textblok h2 {
+	margin-top: 0px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 13px 26px;
+	text-transform: uppercase;
+	background-color: #2f4858;
+	color: #fdae14;
+	text-decoration: none;
+	margin: 10px auto;
+	border: solid 2px #2f4858;
+	transition-duration: 0.3s;
+}
+
+.btn:hover {
+	background-color: #fdae14;
+	color: #2f4858;
+	transition-duration: 0.3s;
+}
+
+/*Nieuws sectie*/
+
+#news {
+	display: flex;
+	align-items: center;
+	background-color: #2f4858;
+	color: #fdae14;
+	padding: 4px 20px;
+}
+
+#news h2 {
+	margin-top: 0px;
+}
+
+.newsimage {
+	width: 400px;
+}
+
+.newsimage img {
+	display: block;
+	max-width: 300px;
+	margin: 14px auto;
+	padding-left: 10px;
+}
+
+.news-btn {
+	display: block;
+	padding: 13px 26px;
+	width: 100px;
+	text-transform: uppercase;
+	background-color: #006673;
+	color: #fdae14;
+	text-decoration: none;
+	margin: 10px;
+	border: solid 2px white;
+	transition-duration: 0.3s;
+}
+
+.news-btn:hover {
+	background-color: red;
+	color: white;
+	transition-duration: 0.3s;
+}
+
+/*Artiesten foto sectie*/
+
+.gallery-section {
+	margin-bottom: 40px;
+}
+
+.gallery-box {
+	/*background-color: black;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-item {
+	width: 298px;
+	height: 298px;
+	background-color: darkgrey;
+	border: solid 1px grey;
+}
+
+/*--------------Artiesten op de voorpagina----------*/
+#artiestVoorpagina1 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-andre.jpg");
+}
+
+#artiestVoorpagina2 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-kristyna.jpg");
+}
+
+#artiestVoorpagina3 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-luca.jpg");
+}
+
+#artiestVoorpagina4 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-harri.jpg");
+}
+
+#artiestVoorpagina5 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-tamer.jpg");
+}
+
+#artiestVoorpagina6 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-victor.jpg");
+}
+
+#artiestVoorpagina7 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-pedja.jpg");
+}
+
+#artiestVoorpagina8 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-paco.jpg");
+	display: none;
+}
+
+
+/*--------------Artiesten op de artiestenpagina----------*/
+#artiest1 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-andre.jpg");
+}
+
+#artiest2 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-kristyna.jpg");
+}
+
+#artiest3 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-luca.jpg");
+}
+
+#artiest4 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-harri");
+}
+
+#artiest5 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-victor.jpg");
+}
+
+#artiest6 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-tamer.jpg");
+}
+
+#artiest7 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-pedja.jpg");
+}
+
+#artiest8 {
+	background-size: cover;
+	background-image: url("../images/comedians/pr-paco.jpg");
+}
+
+
+.artiestmore {
+	width: 298px;
+	height: 168px;
+	text-align: center;
+	padding-top: 130px; 
+	color: #fdae14;
+	background-color: #2f4858;
+	transition-duration: 0.5s;
+}
+
+.artiestmore:hover {
+	color: #2f4858;
+	background-color: #fdae14;
+	transition-duration: 0.5s;
+}
+
+.artiesttekst {
+	width: 298px;
+	height: 168px;
+	text-align: center;
+	padding-top: 130px; 
+	color: rgba(255,255,255,0.0);
+	background-color: rgba(0,0,0,0.0);
+	transition-duration: 0.5s;
+}
+
+.artiesttekst:hover {
+	color: rgba(255,255,255,0.6);
+	background-color: rgba(0,0,0,0.6);
+	transition-duration: 0.5s;
+}
+
+.artiesttekst h4 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.artiesttekst p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.artiesttekst p {
+	font-size: 0.8em;
+}
+
+/*Speellijst*/
+
+#speellijst-main {
+	margin-bottom: 50px;
+}
+
+#speellijst-main a {
+	text-decoration: underline;
+	color: #fdae14;
+}
+
+/*Contact form*/
+
+#contact{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+#contactinfo {
+	width: 40%;
+	color: #fdae14;
+	background-color: black;
+	padding: 5px 15px;
+}
+
+#contactinfo h2 {
+	opacity: 0;
+}
+
+#contactinfo a {
+	color: #fdae14;
+	text-decoration: none;
+}
+
+#contactimgwrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+#contactimgwrapper img {
+	width: 200px;
+	height: 166px;
+}
+
+#contactform {
+	width: 60%;
+	color: #fdae14;
+	background-color: #2f4858;
+	padding: 5px 15px;
+}
+
+input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid darkred; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical; 
+}
+
+input[type=submit] {
+	background-color: black;
+	color: #fdae14;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #333;
+}
+
+/*Footer*/
+
+footer {
+	height: 30px;
+	padding: 20px;
+	color: #fdae14;
+	background-color: black;
+}
+
+/*Artist page gallery*/
+
+#pictures {
+	padding: 8px 20px 8px 20px;
+	margin-bottom: 20px;
+}
+
+.gallerywrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallerywrapper img {
+	height: 300px;
+	margin: 10px;
+	padding: 4px;
+	background-color: #ddd;
+}
+
+/* JesterBox */
+.JesterBox div {
+	visibility: hidden;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	z-index: 75;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.JesterBox div:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 74;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.5s ease-out;
+}
+
+.JesterBox div img {
+	position: relative;
+	z-index: 77;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: -9999px;
+	opacity: 0;
+	transition-property: all, opacity;
+	transition-duration: 0.5s, 0.2s;
+	transition-timing-function: ease-in-out, ease-out;
+}
+
+.JesterBox div:target { visibility: visible; }
+
+.JesterBox div:target:before { background-color: rgba(0, 0, 0, 0.7); }
+
+.JesterBox div:target img {
+	margin-left: 0px;
+	opacity: 1;
+}
+
+/*Artist page video section*/
+#video {
+	padding: 8px 20px 8px 20px;
+	margin-bottom: 40px;
+}
+
+.videowrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.videowrapper iframe {
+	width: 368px; 
+	height: 207px;
+	margin-bottom: 15px;
+}
+
+.smallvideos {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0px;
+}
+
+.smallvideos iframe:first-of-type {
+	margin-bottom: 10px;
+}
+
+.mainvideo {
+	margin: 15px 15px 15px 0px;
+	width: 560px; 
+	height: 315px;
+}
+
+iframe {
+	border: 0px;
+}
+
+/*Pagina Speellijst*/
+
+#speellijst {
+	padding-inline-start: 0px;
+	margin: 30px 50px;
+}
+
+#speellijst li {
+	display: flex;
+	margin: 10px 0px;
+	background-color: #2f4858;
+}
+
+.speel-date {
+	width: 150px;
+	height: 80px;
+	background-color: #ddd;
+	text-align: center;
+	padding: 10px;
+}
+
+.speel-date time {
+	display: block;
+	font-family: ArTarumianMHarvats, Arial, Sans-Serif;
+	font-size: 1.5em;
+	margin-top: 8px;
+}
+
+.dag {
+	font-family: ArTarumianMHarvats, Arial, Sans-Serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.speel-info {
+	height: 92px;
+	width: 100%;
+	background-color: #aaa;
+	border: 4px solid black;
+	padding: 0px 15px;
+	transition: 0.5s;
+}
+
+.eventlink {
+	text-decoration: none;
+}
+
+.speel-info h2 {
+	margin: 10px 0px 5px;
+}
+
+.speel-info p {
+	margin: 8px 0px;
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.speel-info:hover {
+	transform: translate(5px, -5px);
+	transition: 0.5s;
+}
+
+li:nth-child(odd) .speel-info {
+	background-color: #ddd;
+}
+
+.menutoggle {
+	display: none;
+}
+
+.menutoggle a {
+	color: white;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: none;
+}
+
+.temphide {
+	display: none;
+}
+
+@media only screen and (max-width: 1200px){
+	.gallery-section {
+		width: 900px;
+		margin: 0px auto;
+	}
+
+	#artiestVoorpagina8 {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px){
+	.verberg {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 980px){
+	#navlogo {
+		width: 268px;
+		height: 24px;
+	}
+
+	nav a {
+		padding: 9px 8px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.sectionimage img {
+		max-width: 90%;
+	}
+
+	.newsimage img {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	#banner, #slide1, #slide2, #slide3 {
+		height: 400px;
+	}
+
+	#logo {
+		background: url(../images/BodP-logo-transparant-400.png) no-repeat center center;
+		height: 400px;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		background-color: #2f4858;
+		overflow: hidden;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li a {
+		display: block;
+	}
+
+	#sl-nav ul {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#menuclose {
+		display: block;
+	}
+
+	.menutoggle {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.active {
+		width: 200px;
+		transition: width 0.6s;
+	}
+
+	.inactive {
+		width: 0;
+		transition: width 0.6s;
+	}
+
+	.langlong {
+		display: none;
+	}
+
+	.langshort {
+		display: inline;
+	}
+
+	#sl-nav li:hover ul {
+		right:-30px;
+		width: 60px;
+	}
+
+	nav ul li ul li {
+		display: flex;
+	}
+
+	#sl-nav li ul {
+		padding-left: 4px;
+	}
+
+	#sl-nav li ul li {
+		padding: 4px 4px;
+	}
+
+	#sl-nav li ul li a {
+		padding: 0px;
+	}
+
+	#sl-nav li {
+		cursor: pointer;
+		padding-bottom:4px;
+	}
+
+	#sl-nav li ul li:last-of-type {
+		padding-bottom: 4px;
+	}
+
+	.gallery-section {
+		width: 600px;
+		margin: 0px auto;
+	}
+
+	#artiestVoorpagina8 {
+		display: none;
+	}
+
+	#contactimgwrapper {
+		justify-content: center;
+	}
+
+	.temphide {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.flex-section {
+		flex-direction: column;
+		margin-top: 5px;
+	}
+
+	#arrangement {
+		flex-direction: column-reverse;
+	}
+
+	.textblok {
+		width: 94%;
+		padding: 8px 8px 8px 20px;
+	}
+
+	.sectionimage {
+		width: 100%;
+	}
+	.sectionimage {
+		margin-bottom: 20px;
+	}
+
+	.newsimage {
+		width: 100%;
+	}
+
+	.temphide {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#banner, #slide1, #slide2, #slide3 {
+		height: 300px;
+	}
+
+	#logo {
+		background: url(../images/BodP-logo-transparant-300.png) no-repeat center center;
+		height: 300px;
+	}
+
+
+	#news {
+		flex-direction: column;
+	}
+
+	.news-btn {
+		margin: 10px auto;
+	}
+
+
+	.gallery-section {
+		width: 300px;
+		margin: 0px auto;
+	}
+
+	#gallery-intro {
+		padding: 0px 20px;
+	}
+
+	.artiesttekst {
+		color: rgba(255,255,255,0.7);
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	#artiestVoorpagina5, #artiestVoorpagina6, #artiestVoorpagina7 {
+		display: none;
+	}
+
+	#contact {
+		flex-direction: column-reverse;
+	}
+
+	#contactinfo {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 20px 15px;
+	}
+
+	#contactform {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	#contactform h2 {
+		display: none;
+	}
+
+	.temphide {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 400px){
+	#banner, #slide1, #slide2, #slide3 {
+		height: 200px;
+	}
+
+	#logo {
+		background: url(../images/BodP-logo-transparant-200.png) no-repeat center center;
+		height: 200px;
+	}
+
+	#navlogo {
+		width: 268px;
+		height: 24px;
+	}
+
+	.temphide {
+		display: none;
+	}
+}
