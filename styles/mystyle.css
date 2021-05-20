@@ -3,14 +3,9 @@
 	src: url(../fonts/HARVATS.ttf);
 }
 
-@font-face {font-family: "Europa-Bold"; 
-src: url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.eot"); 
-src: url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.woff") format("woff"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d3bfee78e8ead45d9057a95bb6ff5de8.svg#Europa-Bold") format("svg"); 
-}
-
-@font-face {font-family: "Europa"; 
-src: url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.eot"); 
-src: url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.woff") format("woff"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.svg#Europa") format("svg"); 
+@font-face {
+	font-family: Europa-Bold;
+	src: url(../fonts/europa-bold-webfont.ttf);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -69,8 +64,11 @@ src: url("//db.onlinewebfonts.com/t/23c0fcab84d99da0de762de7e220a6e1.eot?#iefix"
 
 #banner-page {
 	height: 300px;
+	position: relative;
+	padding: 20px 0px 0px 20px;
 	background-size: cover;
-	background-image: url("../images/temp-audience1.jpg");
+	background-position: center;
+	background-image: url("../images/page-banner1.jpg");
 }
 
 body{
@@ -83,7 +81,6 @@ body{
 
 h1, h2 {
 	font-family: Europa-Bold, Arial, Sans-Serif;
-	text-transform: uppercase;
 	font-size: 1.7em;
 }
 
@@ -92,20 +89,26 @@ a {
 	text-decoration: none;
 }
 
-
-/*#logo {
-	background: url(../images/BodP-logo-transparant.png) no-repeat center center;
+#socialLinks {
 	position: absolute;
-	top: 0;
-	left: 0; 
+	bottom: 0;
 	right: 0; 
-	margin-left: auto; 
-	margin-right: auto; 
-	height: 500px;
-}*/
+}
+
+#socialLinks a {
+	color: white;
+	font-size: 22px;
+	margin: 0px 5px;
+	transition: 0.5s;
+}
+
+#socialLinks a:hover {
+	color: #fdae14;
+	transition: 0.5s;
+}
 
 #logo-page {
-	background: url(../images/BodP-logo-transparant-300.png) no-repeat center center;
+	background: url(../images/coe-logo-150px.png) no-repeat;
 	height: 300px;
 }
 
@@ -645,13 +648,49 @@ footer {
 	padding: 20px;
 	color: #fdae14;
 	background-color: black;
+	display: flex;
+	justify-content: space-between;
 }
 
-/*Artist page gallery*/
+footer a {
+	color: white;
+	font-size: 22px;
+	margin: 0px 5px;
+	transition: 0.5s;
+}
+
+footer a:hover {
+	color: #fdae14;
+	transition: 0.5s;
+}
+
+/*Artist page*/
+
+.comedianName {
+	margin-bottom: 0px;
+}
+
+.comedianNationality {
+	font-family: Europa-Bold, Arial, Sans-Serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0px;
+}
+
+.comedianLanguages {
+	margin-top: 0px;
+	margin-bottom: 24px;
+	font-style: italic;
+}
 
 #pictures {
 	padding: 8px 20px 8px 20px;
-	margin-bottom: 20px;
+	margin: 20px 0px 10px;
+	background-color: #2f4858;
+}
+
+#pictures h2 {
+	margin: 4px 0px;
 }
 
 .gallerywrapper {
@@ -1021,6 +1060,16 @@ li:nth-child(odd) .speel-info {
 
 	.temphide {
 		display: none;
+	}
+
+	#banner-page {
+		height: 200px;
+		padding: 10px 0px 0px 10px;
+	}
+
+	#logo-page {
+		background: url(../images/coe-logo-100px.png) no-repeat;
+		height: 200px;
 	}
 }
 
