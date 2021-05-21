@@ -16,7 +16,7 @@ comedian[2] = {
 	name: "Luca Cupani",
 	picture: "pr-luca.jpg",
 	country: "Italy",
-	page: "xxx.html"
+	page: "pr-luca.html"
 };
 comedian[3] = {
 	name: "Harri Soinila",
@@ -58,13 +58,13 @@ comedian[9] = {
 	name: "Steve Hili",
 	picture: "pr-steve.jpg",
 	country: "Malta",
-	page: "xxx.html"
+	page: "pr-steve.html"
 };
 comedian[10] = {
 	name: "Malinda Perera",
 	picture: "pr-malinda.jpg",
 	country: "Sri Lanka",
-	page: "xxx.html"
+	page: "pr-malinda.html"
 };
 
 function compare( a, b ) {
@@ -92,5 +92,24 @@ if( document.body.contains( document.getElementById('artiestVoorpagina1') ) ) {
 		document.getElementById('artiestVoorpagina' + i).style.backgroundImage = "url('images/comedians/" + comedian[randomI].picture + "')"
 
 		comedian.splice(randomI,1);
+	};
+};
+
+if( document.body.contains( document.getElementById('artistGallery') ) ) {
+	var galleryInnerHtml = "";
+	
+	for (i = 0; i < comedian.length; i++) {
+		var link = '#'
+		if (comedian[i].page != "xxx.html") {
+			link = comedian[i].page;
+		};
+
+		galleryInnerHtml = galleryInnerHtml + '<div class="gallery-item comedianSquare" id="artiest' + (i+1) + '"><a href="' + link + '"><div class="artiesttekst"><h4>' + comedian[i].name + '</h4><p>' + comedian[i].country + '</p></div></a></div>';
+	};
+
+	document.getElementById('artistGallery').innerHTML = galleryInnerHtml;
+
+	for (i = 0; i < comedian.length; i++) {
+		document.getElementById('artiest' + (i + 1)).style.backgroundImage = "url('images/comedians/" + comedian[i].picture + "')"
 	};
 };

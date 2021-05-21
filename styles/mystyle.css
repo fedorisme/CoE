@@ -477,43 +477,39 @@ main {
 
 
 /*--------------Artiesten op de artiestenpagina----------*/
-#artiest1 {
+.comedianSquare {
 	background-size: cover;
+}
+
+#artiest1 {
 	background-image: url("../images/comedians/pr-andre.jpg");
 }
 
 #artiest2 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-kristyna.jpg");
 }
 
 #artiest3 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-luca.jpg");
 }
 
 #artiest4 {
-	background-size: cover;
-	background-image: url("../images/comedians/pr-harri");
+	background-image: url("../images/comedians/pr-harri.jpg");
 }
 
 #artiest5 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-victor.jpg");
 }
 
 #artiest6 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-tamer.jpg");
 }
 
 #artiest7 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-pedja.jpg");
 }
 
 #artiest8 {
-	background-size: cover;
 	background-image: url("../images/comedians/pr-paco.jpg");
 }
 
@@ -681,6 +677,16 @@ footer a:hover {
 	margin-top: 0px;
 	margin-bottom: 24px;
 	font-style: italic;
+}
+
+#quotes {
+	padding: 8px 20px 8px 20px;
+}
+
+#quotes h3 {
+	font-family: Europa-Bold, Arial, Sans-Serif;
+	font-size: 1.4em;
+	text-decoration: underline;
 }
 
 #pictures {
