@@ -34,19 +34,19 @@ comedian[5] = {
 	name: "Victor Pãtrãşcan",
 	picture: "pr-victor.jpg",
 	country: "Romania",
-	page: "xxx.html"
+	page: "pr-victor.html"
 };
 comedian[6] = {
 	name: "Pedja Bajovic",
 	picture: "pr-pedja.jpg",
 	country: "Croatia",
-	page: "xxx.html"
+	page: "pr-pedja.html"
 };
 comedian[7] = {
 	name: "Paco Erhard",
 	picture: "pr-paco.jpg",
 	country: "Germany",
-	page: "xxx.html"
+	page: "pr-paco.html"
 };
 comedian[8] = {
 	name: "Fedor Ikelaar",
@@ -65,6 +65,12 @@ comedian[10] = {
 	picture: "pr-malinda.jpg",
 	country: "Sri Lanka",
 	page: "pr-malinda.html"
+};
+comedian[11] = {
+	name: "Magda Mihaila",
+	picture: "pr-magda.jpg",
+	country: "Romania",
+	page: "pr-magda.html"
 };
 
 function compare( a, b ) {
