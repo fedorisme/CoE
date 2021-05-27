@@ -4,13 +4,13 @@ comedian[0] = {
 	name: "André De Freitas",
 	picture: "pr-andre.jpg",
 	country: "Portugal",
-	page: "xxx.html"
+	page: "pr-andre.html"
 };
 comedian[1] = {
 	name: "Kristýna Haklová",
 	picture: "pr-kristyna.jpg",
 	country: "Czech Republic",
-	page: "xxx.html"
+	page: "pr-kristyna.html"
 };
 comedian[2] = {
 	name: "Luca Cupani",
