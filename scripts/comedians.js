@@ -22,13 +22,13 @@ comedian[3] = {
 	name: "Harri Soinila",
 	picture: "pr-harri.jpg",
 	country: "Finland",
-	page: "xxx.html"
+	page: "pr-harri.html"
 };
 comedian[4] = {
 	name: "Tamer Kattan",
 	picture: "pr-tamer.jpg",
 	country: "United States",
-	page: "xxx.html"
+	page: "pr-tamer.html"
 };
 comedian[5] = {
 	name: "Victor Pãtrãşcan",
@@ -71,6 +71,12 @@ comedian[11] = {
 	picture: "pr-magda.jpg",
 	country: "Romania",
 	page: "pr-magda.html"
+};
+comedian[12] = {
+	name: "George Zacharopoulos",
+	picture: "pr-george.jpg",
+	country: "Greece",
+	page: "pr-george.html"
 };
 
 function compare( a, b ) {
