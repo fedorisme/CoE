@@ -89,6 +89,10 @@ a {
 	text-decoration: none;
 }
 
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #fdae14;
+    margin: 2em 0; padding: 0; }
+
 #socialLinks {
 	position: absolute;
 	bottom: 0;
@@ -212,8 +216,8 @@ main {
 .linkoffset::before {
 	content: '';
 	display: block;
-	height:      30px;
-	margin-top: -30px;
+	height:      130px;
+	margin-top: -130px;
 	visibility: hidden;
 }
 
@@ -332,6 +336,10 @@ main {
 	align-items: center;
 }
 
+#arrangement {
+	flex-direction: row-reverse;
+}
+
 .sectionimage {
 	width: 50%;
 }
@@ -340,6 +348,14 @@ main {
 	display: block;
 	max-width: 500px;
 	margin: 0px auto;
+}
+
+#corpImg1 {
+	display: none;
+}
+
+#corpImg2 {
+	max-width: 400px;
 }
 
 .textblok {
@@ -564,6 +580,7 @@ main {
 
 #speellijst-main {
 	margin-bottom: 50px;
+	flex-direction: row-reverse;
 }
 
 #speellijst-main a {
@@ -915,7 +932,8 @@ li:nth-child(odd) .speel-info {
 }
 
 @media only screen and (max-width: 1100px){
-	.sectionimage img {
+
+	#corpImg2 {
 		max-width: 90%;
 	}
 
@@ -1042,6 +1060,19 @@ li:nth-child(odd) .speel-info {
 	.flex-section {
 		flex-direction: column;
 		margin-top: 5px;
+	}
+
+	#speellijst-main {
+	flex-direction: column;
+	}
+
+	#corpImg1 {
+		display: block;
+		max-width: 90%;
+	}
+
+	#corpImg2 {
+		display: none;
 	}
 
 	#arrangement {
