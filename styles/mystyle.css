@@ -10,6 +10,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/*Hide inactive social links*/
+#socialLinks a:nth-child(3), #socialLinks a:nth-child(4), #socialLinks a:nth-child(5) {
+	display: none;
+}
+
+footer a:nth-child(3), footer a:nth-child(4), footer a:nth-child(5) {
+	display: none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+/*.linkoffset::before {
+	content: '';
+	display: block;
+	height:      130px;
+	margin-top: -130px;
+	visibility: hidden;
+}*/
+
 #mainwrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -211,14 +235,6 @@ nav a:hover {
 
 main {
 	clear: both;
-}
-
-.linkoffset::before {
-	content: '';
-	display: block;
-	height:      130px;
-	margin-top: -130px;
-	visibility: hidden;
 }
 
 /*Language picker styling*/
