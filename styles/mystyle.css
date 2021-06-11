@@ -1183,6 +1183,10 @@ li:nth-child(odd) .speel-info {
 		display: none;
 	}
 
+	#contactinfo h2 {
+		opacity: 1;
+	}
+
 	.temphide {
 		display: none;
 	}
