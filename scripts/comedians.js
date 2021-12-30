@@ -78,46 +78,18 @@ comedian[10] = {
 	gender: "m"
 };
 comedian[11] = {
-	name: "Magda Mihaila",
-	picture: "pr-magda.jpg",
-	country: "Romania",
-	page: "pr-magda.html",
-	gender: "f"
-};
-comedian[12] = {
 	name: "George Zacharopoulos",
 	picture: "pr-george.jpg",
 	country: "Greece",
 	page: "pr-george.html",
 	gender: "m"
 };
-comedian[13] = {
-	name: "Aislinn Kane",
-	picture: "pr-aislinn.jpg",
-	country: "United States",
-	page: "pr-aislinn.html",
-	gender: "f"
-};
-comedian[14] = {
-	name: "Anna Beros",
-	picture: "pr-anna.jpg",
-	country: "New Zealand",
-	page: "pr-anna.html",
-	gender: "f"
-};
-comedian[15] = {
+comedian[12] = {
 	name: "Filippo Spreafico",
 	picture: "pr-filippo.jpg",
 	country: "Italy",
 	page: "pr-filippo.html",
 	gender: "m"
-};
-comedian[16] = {
-	name: "Kat Nip",
-	picture: "pr-kat.jpg",
-	country: "Poland",
-	page: "pr-kat.html",
-	gender: "f"
 };
 
 function compare( a, b ) {
