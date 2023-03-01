@@ -29,68 +29,68 @@ comedian[3] = {
 	gender: "m"
 };
 comedian[4] = {
-	name: "Tamer Kattan",
-	picture: "pr-tamer.jpg",
-	country: "United States",
-	page: "pr-tamer.html",
-	gender: "m"
-};
-comedian[5] = {
 	name: "Victor Pãtrãşcan",
 	picture: "pr-victor.jpg",
 	country: "Romania",
 	page: "pr-victor.html",
 	gender: "m"
 };
-comedian[6] = {
+comedian[5] = {
 	name: "Pedja Bajovic",
 	picture: "pr-pedja.jpg",
 	country: "Croatia",
 	page: "pr-pedja.html",
 	gender: "m"
 };
-comedian[7] = {
+comedian[6] = {
 	name: "Paco Erhard",
 	picture: "pr-paco.jpg",
 	country: "Germany",
 	page: "pr-paco.html",
 	gender: "m"
 };
-comedian[8] = {
+comedian[7] = {
 	name: "Fedor Ikelaar",
 	picture: "pr-fedor.jpg",
 	country: "The Netherlands",
 	page: "pr-fedor.html",
 	gender: "m"
 };
-comedian[9] = {
+comedian[8] = {
 	name: "Steve Hili",
 	picture: "pr-steve.jpg",
 	country: "Malta",
 	page: "pr-steve.html",
 	gender: "m"
 };
-comedian[10] = {
+comedian[9] = {
 	name: "Malinda Perera",
 	picture: "pr-malinda.jpg",
-	country: "Sri Lanka",
+	country: "Ireland /Sri Lanka",
 	page: "pr-malinda.html",
 	gender: "m"
 };
-comedian[11] = {
+comedian[10] = {
 	name: "George Zacharopoulos",
 	picture: "pr-george.jpg",
 	country: "Greece",
 	page: "pr-george.html",
 	gender: "m"
 };
-comedian[12] = {
+comedian[11] = {
 	name: "Filippo Spreafico",
 	picture: "pr-filippo.jpg",
 	country: "Italy",
 	page: "pr-filippo.html",
 	gender: "m"
 };
+// comedian[12] = {
+// 	name: "Tamer Kattan",
+// 	picture: "pr-tamer.jpg",
+// 	country: "United States",
+// 	page: "pr-tamer.html",
+// 	gender: "m"
+// };
 
 function compare( a, b ) {
 	if ( a.name < b.name ){
